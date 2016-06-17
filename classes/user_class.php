@@ -37,8 +37,7 @@ class User {
 
 	public function login($email,$pass) {
 		$db = new db();
-		$sql = 'SELECT * FROM users WHERE email = ? and active = "1";';		
-		$results = $db->query($sql, $email);
+		$results = $db->query('SELECT * FROM users WHERE email = ? and active = "1";', $email);
 		if(count($results) == 1 && password_verify($pass, $results[0]->password) ):
 			//user is valid, lets log them in
 			$this->id = $results[0]->id;
