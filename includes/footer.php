@@ -4,6 +4,13 @@
 
 </body>
 </html>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('body').append(newFormElement('test', 'select', 'test_id', [{name: 'lol', val: 'sick'}, {name: 'COOL', val: 's2'}]));
+	});
+</script>
+
 <!--
 app=>		Referral System
 version=>	0.0.2
