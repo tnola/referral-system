@@ -43,3 +43,8 @@ require_once('includes/loader.php');
 		</div>
 	</div>
 </nav>
+
+<?php
+//add to each page for desired effect
+//<div class="container container-fluid">
+?>
